@@ -203,12 +203,12 @@
 </div>
 
 <script>
-  // Check URL params for success
+  
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('success') === '1') {
     document.getElementById('success-message').style.display = 'block';
 
-    // Optionally, remove the query string after showing the message
+   
     if (window.history.replaceState) {
       const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
       window.history.replaceState({}, document.title, cleanUrl);
@@ -336,3 +336,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
